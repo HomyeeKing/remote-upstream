@@ -1,6 +1,6 @@
 {
   "name": "remote-upstream",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "auto add upstream remote if it's a forked repo",
   "publishConfig": {
     "access": "public"
