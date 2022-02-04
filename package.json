@@ -1,7 +1,7 @@
 {
-  "name": "my-ts-lib",
+  "name": "remote-upstream",
   "version": "0.0.0",
-  "description": "My awesome typescript library",
+  "description": "auto add upstream remote if it's a forked repo",
   "publishConfig": {
     "access": "public"
   },
