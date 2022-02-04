@@ -29,7 +29,8 @@
     "build-fast": "tsup src/index.ts --format cjs,esm",
     "build": "pnpm run build-fast -- --dts-resolve",
     "test": "vitest run",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "pnpm run build",
+    "postinstall": "node ./dist/index.js"
   },
   "devDependencies": {
     "@egoist/prettier-config": "1.0.0",
