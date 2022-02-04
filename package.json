@@ -10,14 +10,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "<your_git_repo_url>"
+    "url": "https://github.com/HomyeeKing/remote-upstream"
   },
   "license": "MIT",
   "author": "HomyeeKing",
   "bugs": {
-    "url": "<your_git_repo_url>/issues"
+    "url": "https://github.com/HomyeeKing/remote-upstream/issues"
   },
-  "homepage": "<your_git_repo_url>",
+  "homepage": "https://github.com/HomyeeKing/remote-upstream",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "exports": {
