@@ -1,4 +1,3 @@
-#!/usr/bin/env zx
 import { $, fetch } from "zx"
 ;(async () => {
   const origin = (await $`git remote get-url  origin`).stdout.trim()

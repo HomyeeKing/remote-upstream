@@ -8,7 +8,7 @@ after you fork one repo, you don't have to go back to copy the upstream ssh_url 
 git remote add upstream <upstream_ssh_url>
 ```
 
-** JUST NEED ** to install this package, we will do that for you.
+**JUST NEED** to install this package, we will do that for you.
 
 # usage
 
