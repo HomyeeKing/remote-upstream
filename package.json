@@ -34,10 +34,16 @@
   },
   "devDependencies": {
     "@egoist/prettier-config": "1.0.0",
+    "husky": "^7.0.4",
     "prettier": "2.5.1",
     "tsup": "5.11.13",
     "typescript": "4.5.4",
     "vitest": "0.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "pnpm run build"
+    }
   },
   "dependencies": {
     "zx": "^4.3.0"
