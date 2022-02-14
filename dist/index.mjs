@@ -1,3 +1,5 @@
+#!/usr/bin/env zx
+
 // src/index.ts
 import { $, fetch } from "zx";
 (async () => {
