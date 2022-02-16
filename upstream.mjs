@@ -17,6 +17,8 @@ if (origin.startsWith("git@")) {
           chalk.green(`ADD UPSTREAM SUCCESSFULLY. CHECK THE GIT REMOTE`),
         )
         await $`git remote -v`
+      }else{
+        console.log(chalk.yellow`${userAndRepo} is not a forked repo`);
       }
     } else {
       console.error(`Failed to get the ${userAndRepo} info,  please file an issue: 
