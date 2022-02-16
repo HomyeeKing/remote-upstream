@@ -1,6 +1,6 @@
 #!/usr/bin/env zx
 
-import "zx/globals";
+/// <reference path="node_modules/zx/globals.d.ts" />
 
 const upstreamCommand =
   "curl -o- https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/upstream.mjs | zx";
