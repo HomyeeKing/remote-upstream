@@ -15,16 +15,17 @@ git remote add upstream <upstream_ssh_url>
 before usage, you need to install zx globally
 `npm i zx -g`
 then run
+
 ```bash
- curl -o- https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/upstream.mjs | zx
+ zx https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/upstream.mjs
 ```
 
- **OR** you want to make it permanantly, you need to inject to in global git hooks
+**OR** you want to make it permanantly, you need to inject to in global git hooks
 
-so run 
+so run
 
 ```bash
- curl -o- https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/install.mjs | zx
+ zx https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/install.mjs
 ```
 
 it will inject for you.

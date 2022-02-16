@@ -1,4 +1,5 @@
 #!/usr/bin/env zx
+/// <reference types="zx/globals" />
 
 const origin = (await $`git remote get-url  origin`).stdout.trim()
 
