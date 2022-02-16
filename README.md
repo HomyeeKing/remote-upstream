@@ -4,7 +4,7 @@ have you fed up with add upstream remote by hand? that's what this package do.
 
 after you fork one repo, you don't have to go back to copy the upstream ssh_url and do
 
-```
+```bash
 git remote add upstream <upstream_ssh_url>
 ```
 
@@ -15,11 +15,17 @@ git remote add upstream <upstream_ssh_url>
 before usage, you need to install zx globally
 `npm i zx -g`
 then run
-` curl -o- https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/upstream.mjs | zx`
+```bash
+ curl -o- https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/upstream.mjs | zx
+```
 
  **OR** you want to make it permanantly, you need to inject to in global git hooks
 
-so run ` curl -o- https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/install.mjs | zx`
+so run 
+
+```bash
+ curl -o- https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/install.mjs | zx
+```
 
 it will inject for you.
 
