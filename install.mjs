@@ -1,6 +1,6 @@
 #!/usr/bin/env zx
 
-/// <reference path="node_modules/zx/globals.d.ts" />
+/// <reference types="zx/globals" />
 
 const upstreamCommand =
   "curl -o- https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/upstream.mjs | zx";
@@ -25,3 +25,4 @@ if (fs.existsSync(postCheckout)) {
 } else {
   console.log(chalk.red(`${postCheckout} is not exist`));
 }
+
