@@ -1,0 +1,23 @@
+{
+  "name": "remote-upstream",
+  "version": "1.0.0",
+  "description": "have you fed up with add upstream remote by hand? that's what this package do.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HomyeeKing/remote-upstream.git"
+  },
+  "keywords": [],
+  "author": "HomyeeKing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HomyeeKing/remote-upstream/issues"
+  },
+  "homepage": "https://github.com/HomyeeKing/remote-upstream#readme",
+  "devDependencies": {
+    "zx": "^5.0.0"
+  }
+}
