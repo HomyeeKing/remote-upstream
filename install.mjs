@@ -2,7 +2,7 @@
 /// <reference types="zx/globals" />
 
 const upstreamCommand =
-  "zx https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/get-upstream.mjs";
+  "zx https://raw.githubusercontent.com/HomyeeKing/remote-upstream/main/get-upstream.mjs";
 
 // git init template reference https://git-scm.com/docs/git-init#_template_directory
 const git_init_template =

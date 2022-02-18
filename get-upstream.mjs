@@ -7,7 +7,7 @@ if( (await $`git remote get-url  origin`).stdout){
 }
 
 const origin = (await $`git remote get-url  origin`).stdout.trim();
-const command = 'zx https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/get-upstream.mjs'
+const command = 'zx https://raw.githubusercontent.com/HomyeeKing/remote-upstream/main/get-upstream.mjs'
 // fetch controller
 const controller = new AbortController();
 
