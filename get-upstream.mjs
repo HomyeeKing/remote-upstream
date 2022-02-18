@@ -1,21 +1,24 @@
 #!/usr/bin/env zx
-/// <reference types="zx/globals" />
-$.verbose = false
 
-if( (await $`git remote get-url  origin`).stdout){
+/// <reference types="zx/globals" />
+
+$.verbose = false;
+
+if ((await $`git remote get-url  origin`).stdout) {
   console.log(chalk.yellow`there's already a remote called upstream`);
-  await $`exit 1`
+  process.exit(1);
 }
 
 const origin = (await $`git remote get-url  origin`).stdout.trim();
-const command = 'zx https://raw.githubusercontent.com/HomyeeKing/remote-upstream/main/get-upstream.mjs'
+const command =
+  "zx https://raw.githubusercontent.com/HomyeeKing/remote-upstream/main/get-upstream.mjs";
 // fetch controller
 const controller = new AbortController();
 
 const timer = setTimeout(() => {
   controller.abort();
-  await $`exit 1`
   console.log(chalk.yellow`Fetch timeout! Please run ${command} by hand`);
+  process.exit(1);
 }, 10000);
 
 if (origin.startsWith("git@")) {
@@ -26,7 +29,7 @@ if (origin.startsWith("git@")) {
     const res = await fetch(`https://api.github.com/repos/${userAndRepo}`, {
       signal: controller.signal,
     });
-    clearTimeout(timer)
+    clearTimeout(timer);
     if (res.ok) {
       const info = await res.json();
       if (info.fork) {
