@@ -17,7 +17,7 @@ before usage, you need to install zx globally
 then run
 
 ```bash
- zx https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/upstream.mjs
+ zx https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/get-upstream.mjs
 ```
 
 **OR** you want to make it permanantly, you need to inject to in global git hooks

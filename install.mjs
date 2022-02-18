@@ -2,7 +2,7 @@
 /// <reference types="zx/globals" />
 
 const upstreamCommand =
-  "zx https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/upstream.mjs";
+  "zx https://raw.githubusercontent.com/HomyeeKing/remote-upstream/master/get-upstream.mjs";
 
 // git init template reference https://git-scm.com/docs/git-init#_template_directory
 const git_init_template =
@@ -18,10 +18,11 @@ if (fs.existsSync(postCheckout)) {
   if (content.includes(upstreamCommand)) {
     console.log(chalk.yellow`upstream command has been injected`);
   } else {
-    fs.writeFileSync(postCheckout, `${content}\n ${upstreamCommand}`);
-    console.log(chalk.green`upstream command has injected`);
+    fs.writeFileSync(postCheckout, `${content}\n${upstreamCommand}`);
+    console.log(chalk.green`upstream command is injected successfully`);
   }
 } else {
-  console.log(chalk.red(`${postCheckout} is not exist`));
+  console.log(chalk.red(`${postCheckout} is not exist, will create it for you`));
+  await $`echo ${upstreamCommand} > post-checkout`
 }
 
