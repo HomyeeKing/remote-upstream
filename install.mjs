@@ -1,5 +1,6 @@
 #!/usr/bin/env zx
 /// <reference types="zx/globals" />
+$.verbose = false
 
 const upstreamCommand =
   "zx https://raw.githubusercontent.com/HomyeeKing/remote-upstream/main/get-upstream.mjs";
