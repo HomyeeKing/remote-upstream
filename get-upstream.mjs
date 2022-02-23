@@ -1,7 +1,6 @@
 #!/usr/bin/env zx
 
 /// <reference types="zx/globals" />
-
 $.verbose = false;
 
 if ((await $`git remote get-url  origin`).stdout) {
