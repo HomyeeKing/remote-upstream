@@ -18,6 +18,7 @@ if (!fs.existsSync(postCheckout)) {
 }
 
 cd(hooksPath)
+
 await $`curl -O https://raw.githubusercontent.com/HomyeeKing/remote-upstream/main/${upstream_file_name}`
 await $`chmod +x ./${upstream_file_name}`
 await $`echo ./${upstream_file_name} >> ${postCheckout}`
